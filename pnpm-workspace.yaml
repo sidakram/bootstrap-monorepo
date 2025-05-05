@@ -1,0 +1,8 @@
+# pnpm-workspace.yaml
+packages:
+  # all packages in subdirs of packages/
+  - 'packages/*'
+  # all apps in subdirs of apps/
+  - 'apps/*'
+  # include packages specific to specific domains
+  # - 'internal/*'

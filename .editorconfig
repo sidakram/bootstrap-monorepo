@@ -1,0 +1,36 @@
+# .editorconfig
+
+# Top-most EditorConfig file
+root = true
+
+[*]
+# Universal settings for all files
+end_of_line = lf
+charset = utf-8
+trim_trailing_whitespace = true
+insert_final_newline = true
+
+[*.{js,jsx,ts,tsx}]
+# Settings for files Biome handles (mostly for editors without Biome extension)
+# Biome's config takes precedence when formatting via Biome
+indent_style = tab
+indent_size = 4
+tab_width = 4
+
+[*.json]
+# Settings for JSON (Biome's config takes precedence)
+indent_style = space
+indent_size = 2
+
+[*.{yml,yaml}]
+# Settings for YAML (Biome doesn't handle these)
+indent_style = space
+indent_size = 2
+
+[*.md]
+# Example for Markdown
+indent_style = space
+indent_size = 4
+trim_trailing_whitespace = false
+
+# Add other file types as needed (e.g., *.css, *.html, Dockerfile)
